@@ -1,17 +1,25 @@
 # roast-me
 
-A Claude Code skill (also usable by other agents that read `SKILL.md`) that answers "Based on everything you know about me, roast me and don't hold back." The roast is built only from your real record (this conversation, your notes, your git history), not a stock personality type, and written in your language at full strength unless you dial it down. It can also make a version safe to post publicly, with unpublished details taken out.
+An agent skill for Claude Code, Codex, and other agents that read `SKILL.md`. It answers "Based on everything you know about me, roast me and don't hold back." The roast is built only from your real record (this conversation, your notes, your git history), not a stock personality type, and written in your language at full strength unless you dial it down. It can also make a version safe to post publicly, with unpublished details taken out.
 
 ## Install
 
-In Claude Code:
+**Claude Code**
 
 ```
 /plugin marketplace add MetamoL/skills
 /plugin install roast-me@metamol
 ```
 
-Or clone this repository as a skill folder:
+**Codex and other agents**
+
+```
+npx skills add MetamoL/roast-me
+```
+
+It asks which agents to install for. Add `-g` to make it available in every project.
+
+**By hand:** clone this repository into your agent's skills folder (`~/.claude/skills/` for Claude Code, `~/.agents/skills/` for Codex).
 
 ```
 git clone https://github.com/MetamoL/roast-me ~/.claude/skills/roast-me
@@ -21,7 +29,7 @@ More skills: [MetamoL/skills](https://github.com/MetamoL/skills).
 
 ## 日本語
 
-「知っていることを全部使って、容赦なくローストして」に応える Claude Code 用のスキルです。会話や作業記録の実話だけを材料に、頼んだ人の言語で、本人が笑えるローストを書きます。SNS に載せる用に、未公開の情報を抜いた版も作れます。導入は上の Install のとおりです。ほかのスキルは [MetamoL/skills](https://github.com/MetamoL/skills) にまとめています。
+「知っていることを全部使って、容赦なくローストして」に応える AI エージェント用のスキルです。Claude Code・Codex など、`SKILL.md` を読むエージェントで使えます。会話や作業記録の実話だけを材料に、頼んだ人の言語で、本人が笑えるローストを書きます。SNS に載せる用に、未公開の情報を抜いた版も作れます。導入は上の Install のとおりです。ほかのスキルは [MetamoL/skills](https://github.com/MetamoL/skills) にまとめています。
 
 ## License
 
